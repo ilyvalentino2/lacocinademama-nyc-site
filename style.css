@@ -264,6 +264,14 @@ h2 {
   font-size: 0.95rem;
 }
 
+/* Ensure featured dish images align consistently by setting a fixed height and using object-fit to crop. Without this rule the cards can have uneven heights when images have different aspect ratios. */
+.dish-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
 /* About summary */
 .about-summary {
   background-color: #fff3e6;
@@ -519,13 +527,4 @@ h2 {
   .hero-content p {
     font-size: 1rem;
   }
-
-/* Featured dishes images alignment */
-.dish-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
 }
