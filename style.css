@@ -347,6 +347,51 @@ h2 {
   overflow: hidden;
 }
 
+/* Map section on About page */
+.map-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 2rem 0;
+  background-color: #fff3e6;
+}
+.map-container {
+  flex: 1;
+  min-width: 300px;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.map-details {
+  flex: 1;
+  min-width: 250px;
+}
+.map-details h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+.map-details p {
+  margin-bottom: 1.5rem;
+}
+.map-section .btn {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .map-section {
+    flex-direction: column;
+  }
+}
+
 /* Menu page */
 .menu-page h1 {
   margin-top: 1rem;
